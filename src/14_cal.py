@@ -22,3 +22,23 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+user_input = input( 'Enter year(not necessary) and month seperated by a space:')
+
+user_stuff = user_input.split(' ')
+
+def log_input(ui):
+  print(ui)
+
+def generate_calendar(ui):
+  
+    print(calendar.month(2019, 12))
+
+  # if len(ui) =0:
+  #       print(calendar.month(2019, 12))
+  #   elif len(ui) =1:
+  #       print(calandar.month(2019, ui[0]))
+  #   else:
+  #       print(calandar.month(ui[1], ui[0]))
+
+generate_calendar(user_stuff)
