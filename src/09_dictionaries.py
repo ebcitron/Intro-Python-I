@@ -36,9 +36,26 @@ waypoints = [
 # Add a new waypoint to the list
 # YOUR CODE HERE
 
+
+
+eli = {"lat":666, "lon":555, "name":"elis crib"}
+
+waypoints.append(eli)
+
+print(waypoints)
+
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # YOUR CODE HERE
+x = waypoints[0]
 
+x['name'] = "not a real place"
+x['lon'] = -130
+
+print(x)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+
+for x in waypoints:
+    for y in list(x):
+        print(f'{y}: {x[y]}')

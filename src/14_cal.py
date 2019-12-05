@@ -32,7 +32,12 @@ def log_input(ui):
 
 def generate_calendar(ui):
   
+  if len(ui) == 0:
     print(calendar.month(2019, 12))
+  elif len(ui) == 1:
+    print(calendar.month(2019, ui[1]))
+  else:
+    print(calendar.month(ui[1], ui[0]))
 
   # if len(ui) =0:
   #       print(calendar.month(2019, 12))
