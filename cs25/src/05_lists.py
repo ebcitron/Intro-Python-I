@@ -34,3 +34,7 @@ print(x.__len__())
 # YOUR CODE HERE
 x = [i * 1000 for i in x]
 print(x)
+
+print(f"""Multi-line
+interpolated {var}
+strings are a thing""")
